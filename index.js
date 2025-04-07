@@ -40,5 +40,5 @@ app.post('/metrics', (req, res) => {
 
 // Start server
 app.listen(PORT, () => {
-  console.log("nodejs-app-cicd running at http://localhost:3000");
+  console.log("NodeJS-CICD-Pipeline running at http://localhost:3000");
 });

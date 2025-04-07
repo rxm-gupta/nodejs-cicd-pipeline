@@ -25,10 +25,10 @@ jobs:
         run: echo "No tests yet"
 
       - name: Build Docker image
-        run: docker build -t rxmgupta0/nodejs-app-cicd .
+        run: docker build -t rxmgupta0/NodeJS-CICD-Pipeline .
 
       - name: Log in to DockerHub
         run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
 
       - name: Push Docker image
-        run: docker push your-dockerhub-username/nodejs-app-cicd
+        run: docker push rxmgupta0/NodeJS-CICD-Pipeline
